@@ -1,0 +1,43 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build zips
+        run: |
+          V="${GITHUB_REF_NAME}"
+          STL="MARK1_SPECTRE_${V}_STL"; STEP="MARK1_SPECTRE_${V}_STEP"
+          mkdir -p "$STL" "$STEP"
+          cp -r stl/* "$STL"/ && cp LICENSE "$STL"/
+          cp step/*.step "$STEP"/ && cp LICENSE "$STEP"/
+          cat > "$STL/PRINT_ME_FIRST.txt" <<'TXT'
+          MARK 1 SPECTRE - print guide
+          Print the folders in order (1 -> 6).
+          PETG or ASA, 0.2 mm layers, 4 walls, 25-30 % infill. Supports OFF.
+          Import as-is (no rotate / no auto-orient).
+          AMS: import body + its *_ORANGE letters together as one object with multiple parts,
+          assign the letters to orange.
+          Hardware: 2 x M3x40 socket head (DIN 912) + 2 x M3 nuts.
+          Full guide: https://github.com/LoganxWrath/mark1-spectre
+          TXT
+          zip -qr "$STL.zip" "$STL"
+          zip -qr "$STEP.zip" "$STEP"
+
+      - name: Publish release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: MARK 1 SPECTRE ${{ github.ref_name }}
+          body_path: .github/release-notes.md
+          files: |
+            MARK1_SPECTRE_${{ github.ref_name }}_STL.zip
+            MARK1_SPECTRE_${{ github.ref_name }}_STEP.zip
