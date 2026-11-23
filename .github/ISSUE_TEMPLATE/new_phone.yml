@@ -1,0 +1,67 @@
+name: "📱 Request another phone"
+description: Ask for a MARK 1 SPECTRE version that fits a different phone.
+title: "[Phone] "
+labels: ["new phone"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest! The model is parametric, so with exact measurements the lid can be adapted to another phone.
+        **Measure with a ruler or calipers whenever you can.** Figures found online are sometimes off by half a millimetre.
+  - type: input
+    id: model
+    attributes:
+      label: Phone model
+      description: Exact name and model code (Settings > About phone).
+      placeholder: "e.g. Samsung Galaxy S20 (SM-G980F)"
+    validations:
+      required: true
+  - type: input
+    id: size
+    attributes:
+      label: Dimensions (length × width × thickness, in mm)
+      placeholder: "e.g. 151.7 × 69.1 × 7.9"
+    validations:
+      required: true
+  - type: dropdown
+    id: case
+    attributes:
+      label: Do you use a case?
+      options:
+        - No case
+        - Yes, with a case (give the dimensions WITH the case above)
+    validations:
+      required: true
+  - type: textarea
+    id: camera
+    attributes:
+      label: Rear camera
+      description: Distance from the top of the phone to the start and end of the camera module, its width, and whether it is centred or in a corner.
+      placeholder: "e.g. from the top 8 to 32 mm, 22 mm wide, left corner 6 mm from the side"
+    validations:
+      required: true
+  - type: textarea
+    id: keys
+    attributes:
+      label: Keys
+      description: Which side each key is on, and the distance from the top to its start and end.
+      placeholder: |
+        Power: right side, from the top 40 to 55 mm
+        Volume: left side, from the top 30 to 60 mm
+    validations:
+      required: true
+  - type: input
+    id: keyboard
+    attributes:
+      label: Keyboard
+      description: Are you using the Rii Mini X1 or a different one?
+      placeholder: "Rii Mini X1"
+  - type: textarea
+    id: photos
+    attributes:
+      label: Photos
+      description: Drag in photos of the back and the sides of the phone (ideally with a ruler next to it).
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else?

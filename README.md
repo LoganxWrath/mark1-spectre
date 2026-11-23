@@ -1,117 +1,107 @@
 # MARK 1 SPECTRE
 
-**Cyberdeck de bolso, estilo cyberpunk, impresso em 3D.** Um Galaxy S10e na tampa e um teclado Rii Mini X1 na base, com dobradiça, tranca deslizante, botão Power e letras laranja com AMS.
+**A pocket-sized, 3D-printed cyberpunk cyberdeck.** A Samsung Galaxy S10e lives in the lid and a Rii Mini X1 keyboard in the base. It has a real hinge, a sliding lock, a Power button and optional orange AMS lettering.
 
-*Pocket cyberpunk cyberdeck, 3D printed: Galaxy S10e in the lid, Rii Mini X1 keyboard in the base. English summary at the bottom.*
+![Closed](images/closed.jpg)
 
-![Fechado](images/fechado.jpg)
-
-| Aberto | Vista explodida |
+| Open | Exploded view |
 |---|---|
-| ![Aberto](images/aberto.jpg) | ![Explodido](images/explodido.jpg) |
+| ![Open](images/open.jpg) | ![Exploded](images/exploded.jpg) |
 
-| Frente (tranca e Power) | Trás (dobradiças) |
+| Front (lock and Power) | Back (hinges) |
 |---|---|
-| ![Frente](images/frente.jpg) | ![Trás](images/tras.jpg) |
+| ![Front](images/front.jpg) | ![Back](images/back.jpg) |
 
-> 📱 **Queres para outro telemóvel?** [Pede aqui](../../issues/new?template=novo_telemovel.yml). O modelo é paramétrico: com as medidas certas adapta-se a outro telemóvel.
+> 📦 **Just want to print it?** Grab the ready-to-print zip from the [latest release](../../releases/latest).
+>
+> 📱 **Want it for a different phone?** [Request it here](../../issues/new?template=new_phone.yml). The model is parametric, so with accurate measurements it can be adapted to other phones.
 
 ---
 
-## Características
+## Features
 
-- **Telemóvel:** Samsung Galaxy S10e (142,2 × 69,9 × 7,9 mm), sem capa.
-- **Teclado:** Rii Mini X1 / X1 Plus, com rasgo para a saliência de trás.
-- **Fechado:** 164 × 89,2 × 26,8 mm. Abre até 115°, com batente.
-- **Tranca deslizante:** patilha com estrias, curso de 4 mm.
-- **Botão Power:** carrega na tecla do telemóvel com a tampa montada.
-- **Tampas:** tampas laterais disfarçadas para portas e microfone.
-- **Telemóvel no lugar:** preso por lábio fixo + 2 linguetas flexíveis, sem cola.
-- **Impressão:** tudo plano, **sem suportes**, pensado para bico 0,4 mm.
-- **Letras laranja (opcional):** com AMS, só 6 camadas de laranja no total.
+- **Phone:** Samsung Galaxy S10e (142.2 × 69.9 × 7.9 mm), no case.
+- **Keyboard:** Rii Mini X1 / X1 Plus, with a floor slot for the bump on its back.
+- **Closed size:** 164 × 89.2 × 26.8 mm. Opens to 115°, where a stop holds it.
+- **Lock:** sliding lock with a ribbed finger tab and 4 mm travel.
+- **Power button:** presses the phone's own key through the lid.
+- **Caps:** disguised side caps over the ports and microphone.
+- **Phone retention:** a fixed lip and 2 flexible snap tongues. No glue.
+- **Printing:** everything prints flat with **no supports**, designed for a 0.4 mm nozzle.
+- **Orange letters (optional):** AMS lettering that uses only 6 orange layers in total.
 
-## O que imprimir
+## What to print
 
-Tudo está em [`stl/`](stl), por pastas. A ordem das pastas é a ordem de impressão.
+Everything is in [`stl/`](stl) (or in the release zip), split into folders. Print the folders in number order.
 
-| Pasta | O que é | Cor |
+| Folder | Contents | Colour |
 |---|---|---|
-| `1_TESTE_encaixes` | **00a** telemóvel e **00b** teclado: confirma os encaixes antes de gastar filamento | qualquer |
-| `2_TESTE_mecanica_e_tampas` | testes da dobradiça (00d/00e), da tranca (00f/00g), das janelas (00c) e as tampas 05–07 | preto |
-| `3_pecas` | tranca 03, botão 04, faixas 08, tampas dos parafusos 09, barras néon 10 | laranja |
-| `4_TESTE_AMS_letras` | teste das letras com AMS (opcional) | preto + laranja |
-| `5_BASE` | base, **sem** AMS ou **com** AMS (`01_..._AMS` + `11_..._LARANJA`) | preto (+ laranja) |
-| `6_TAMPA` | tampa, **sem** AMS ou **com** AMS (`02_..._AMS` + `12_..._LARANJA`) | preto (+ laranja) |
+| `1_TEST_fit` | **00a** phone and **00b** keyboard fit jigs: check the fits before spending filament | any |
+| `2_TEST_mechanics_and_caps` | hinge (00d/00e), lock (00f/00g) and side-window (00c) tests, plus caps 05–07 | black |
+| `3_parts` | lock 03, Power button 04, stripes 08, screw caps 09, neon bars 10 | orange |
+| `4_TEST_AMS_letters` | AMS lettering test (optional) | black + orange |
+| `5_BASE` | base **without** AMS, or **with** AMS (`01_..._AMS` + `11_..._ORANGE`) | black (+ orange) |
+| `6_LID` | lid **without** AMS, or **with** AMS (`02_..._AMS` + `12_..._ORANGE`) | black (+ orange) |
 
-**Definições** (testado numa Bambu Lab A1):
-- **Material:** PETG ou ASA. O PLA amolece ao sol e as linguetas partem.
-- **Camadas e enchimento:** camada de 0,2 mm, 4 paredes, 25–30 % de enchimento.
-- **Orientação:** importa os ficheiros tal como estão, sem rodar e sem "auto-orient".
-- **Suportes:** **desligados**.
-- **Com AMS:** importa o corpo e as letras juntos e, quando perguntar, responde **Sim** a "objeto com várias peças". Depois põe as letras no filamento laranja.
+**Settings** (tested on a Bambu Lab A1):
+- **Material:** PETG or ASA. PLA softens in the sun and the snap tongues break.
+- **Layers and infill:** 0.2 mm layers, 4 walls, 25–30 % infill.
+- **Orientation:** import the files as they are. Don't rotate them and don't use auto-orient.
+- **Supports:** **off**.
+- **With AMS:** import the body and its letters together. When asked whether to load them as a single object with multiple parts, answer **Yes**. Then assign the letters to orange.
 
-## Material extra
+## Hardware
 
-- **2 × parafusos M3×40** (DIN 912, cabeça cilíndrica) + **2 × porcas M3**. A porca pode ser autoblocante, ou normal com Loctite fraco. Não uses M3×35: a porca fica só meio enroscada.
+- **2 × M3×40 socket head screws** (DIN 912).
+- **2 × M3 nuts:** nylon lock nuts, or plain nuts with mild threadlocker.
 
-## Montagem
+Don't use M3×35: the nut only engages halfway.
 
-1. **Tranca:** pousa a tranca laranja no encaixe do teclado, por trás, com a patilha virada para a frente e encostada à direita (**OPEN ▶**). Empurra-a até a patilha sair pela janela da frente.
-2. **Teclado:** encaixa o Rii Mini X1 na horizontal, com o canto redondo para a direita. O teclado prende a tranca por cima.
-3. **Botão Power:** mete o botão laranja por dentro da tampa, com o flange para dentro.
-4. **Telemóvel:** mete primeiro o lado do volume por baixo do lábio fixo e depois carrega no outro lado até as linguetas fazerem clique.
-5. **Dobradiças:** junta a base e a tampa com os 2 parafusos. A cabeça entra na base e a porca fica no sextavado da tampa. Aperta até a tampa ficar parada em qualquer ângulo.
-6. **Acabamento:** encaixa as tampas laterais e cola as faixas 08, as tampas 09 e as barras néon 10 nos rasgos.
+## Assembly
 
-**Tranca:** com a patilha para a **esquerda ◀ LOCK** a tampa fica presa. Para a **direita OPEN ▶** abre.
+1. **Lock:** drop the orange lock into the keyboard pocket from the back. Its tab faces forward and the lock is pushed to the right (**OPEN ▶**). Push it forward until the tab comes out through the front window.
+2. **Keyboard:** lower the Rii Mini X1 in flat, with its rounded corner on the right. The keyboard holds the lock down.
+3. **Power button:** insert the orange button from inside the lid, flange facing in.
+4. **Phone:** slide the volume-key side under the fixed lip first. Then press the other side down until the snap tongues click.
+5. **Hinges:** join base and lid with the 2 screws. The head goes into the base and the nut sits in the hex pocket of the lid. Tighten until the lid holds any angle.
+6. **Finishing:** fit the side caps, then glue the stripes 08, screw caps 09 and neon bars 10 into their slots.
 
-## Adaptar a outro telemóvel ou teclado
+**Lock:** with the tab to the **left (◀ LOCK)** the lid stays shut. Move it to the **right (OPEN ▶)** to open.
 
-O modelo é gerado pelo script [`src/mark1_spectre_v3.py`](src/mark1_spectre_v3.py) ([CadQuery](https://cadquery.readthedocs.io)). Todas as medidas estão no bloco de parâmetros no topo:
+## Adapting to another phone or keyboard
 
-| Parâmetro | O que é |
+The whole model is generated by [`src/mark1_spectre_v3.py`](src/mark1_spectre_v3.py) ([CadQuery](https://cadquery.readthedocs.io)). All the dimensions are in the parameter block at the top:
+
+| Parameter | What it is |
 |---|---|
-| `PH_L, PH_W, PH_H` | comprimento, largura e espessura do telemóvel |
-| `PH_CLR_L, PH_CLR_W, PH_PAD` | folgas do encaixe e pastilhas do fundo |
-| `PWR_FROM_TOP` | distância do topo do telemóvel ao centro do botão Power |
-| `VOL_FROM_TOP` | zona livre para o volume (lado oposto) |
-| `CAM_CENTER_FROM_TOP, CAM_SIZE, CAM_R` | janela da câmara |
-| `KB_TRAY` (`kb_tray_pocket.json`) | contorno do recorte do teclado |
-| `KB_BUMP` | rasgo para a saliência de trás do teclado |
+| `PH_L, PH_W, PH_H` | phone length, width and thickness |
+| `PH_CLR_L, PH_CLR_W, PH_PAD` | pocket clearances and floor pads |
+| `PWR_FROM_TOP` | distance from the top of the phone to the centre of the Power key |
+| `VOL_FROM_TOP` | clear zone for the volume keys (other side) |
+| `CAM_CENTER_FROM_TOP, CAM_SIZE, CAM_R` | camera window |
+| `KB_TRAY` (`kb_tray_pocket.json`) | keyboard pocket outline |
+| `KB_BUMP` | slot for the bump on the back of the keyboard |
 
 ```bash
 pip install cadquery shapely
 cd src
-python3 mark1_spectre_v3.py ../stl_novos
+python3 mark1_spectre_v3.py ../stl_new
 ```
 
-Para outro telemóvel, imprime primeiro o teste **00a** gerado (10 g, ~40 min) antes da tampa completa.
+For a new phone, print the generated **00a** jig first (about 10 g and 40 min) before printing the full lid.
 
-## Pedir outro telemóvel
+## Requesting another phone
 
-Abre um [pedido de novo telemóvel](../../issues/new?template=novo_telemovel.yml) com:
-- o modelo exato do telemóvel;
-- as medidas (oficiais ou medidas com régua);
-- a posição da câmara e dos botões;
-- se usas capa ou não;
-- fotos das costas e dos lados.
+Open a [new phone request](../../issues/new?template=new_phone.yml) and include:
+- the exact phone model;
+- its dimensions (official, or measured with a ruler);
+- where the camera and the keys are;
+- whether you use a case;
+- photos of the back and the sides.
 
-Quanto mais exatas as medidas, melhor fica o encaixe.
+The more accurate the measurements, the better the fit.
 
-## Licença
+## License
 
-- **Modelos e script:** [CC BY-NC-SA 4.0](LICENSE), © Logan Tech. Podes imprimir, modificar e partilhar, desde que dês crédito, não vendas, e partilhes as alterações com a mesma licença.
-- **Fontes** em `src/fonts`: Orbitron e Dela Gothic One, ambas com licença SIL Open Font License 1.1 (ver os ficheiros `OFL-*.txt`).
-
----
-
-### English summary
-
-Pocket cyberpunk cyberdeck for a **Samsung Galaxy S10e** (lid) and a **Rii Mini X1** keyboard (base).
-- **Mechanics:** hinge with a 115° stop, sliding lock, power button that presses the phone key, snap-fit phone retention.
-- **Printing:** no supports, designed for a 0.4 mm nozzle; optional orange AMS lettering (6 orange layers only).
-- **Files:** STLs in `stl/` (print folders 1→6 in order), STEP in `step/`, parametric CadQuery source in `src/`.
-- **Hardware:** 2 × M3×40 + 2 × M3 nuts.
-- **Other phones:** [open a phone request](../../issues/new?template=novo_telemovel.yml) with your phone's dimensions.
-
-License: CC BY-NC-SA 4.0.
+- **Models and source:** [CC BY-NC-SA 4.0](LICENSE), © Logan Tech. You may print, modify and share them, as long as you give credit, don't sell them, and share your changes under the same license.
+- **Fonts** in `src/fonts`: Orbitron and Dela Gothic One, both under the SIL Open Font License 1.1 (see the `OFL-*.txt` files).

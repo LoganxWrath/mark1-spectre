@@ -1,0 +1,28 @@
+name: "🛠️ Printing or assembly problem"
+description: Something doesn't fit, breaks or doesn't work.
+title: "[Problem] "
+labels: ["problem"]
+body:
+  - type: input
+    id: part
+    attributes:
+      label: Which part?
+      placeholder: "e.g. 02 lid / 03 lock"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens?
+      description: Too tight, too loose, broken, doesn't fit? How much (mm), if you know.
+    validations:
+      required: true
+  - type: input
+    id: printer
+    attributes:
+      label: Printer, material and settings
+      placeholder: "e.g. Bambu A1, PETG, 0.2 mm, 4 walls"
+  - type: textarea
+    id: photos
+    attributes:
+      label: Photos
