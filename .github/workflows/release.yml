@@ -3,6 +3,12 @@ name: Release
 on:
   push:
     tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version tag to create (e.g. v1.0)"
+        required: true
+        default: "v1.0"
 
 permissions:
   contents: write
@@ -14,8 +20,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build zips
+        env:
+          V: ${{ github.event.inputs.version || github.ref_name }}
         run: |
-          V="${GITHUB_REF_NAME}"
           STL="MARK1_SPECTRE_${V}_STL"; STEP="MARK1_SPECTRE_${V}_STEP"
           mkdir -p "$STL" "$STEP"
           cp -r stl/* "$STL"/ && cp LICENSE "$STL"/
@@ -36,8 +43,10 @@ jobs:
       - name: Publish release
         uses: softprops/action-gh-release@v2
         with:
-          name: MARK 1 SPECTRE ${{ github.ref_name }}
+          tag_name: ${{ github.event.inputs.version || github.ref_name }}
+          name: MARK 1 SPECTRE ${{ github.event.inputs.version || github.ref_name }}
           body_path: .github/release-notes.md
+          target_commitish: ${{ github.sha }}
           files: |
-            MARK1_SPECTRE_${{ github.ref_name }}_STL.zip
-            MARK1_SPECTRE_${{ github.ref_name }}_STEP.zip
+            MARK1_SPECTRE_${{ github.event.inputs.version || github.ref_name }}_STL.zip
+            MARK1_SPECTRE_${{ github.event.inputs.version || github.ref_name }}_STEP.zip
