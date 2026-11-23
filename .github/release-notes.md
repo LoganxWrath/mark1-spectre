@@ -15,6 +15,7 @@ First public release of the **MARK 1 SPECTRE**, a pocket cyberpunk cyberdeck for
 - 2 × M3 nuts.
 
 ### What's in v1.0
+- **Opening angle:** 130° (was 115°).
 - **Keyboard pocket:** uses the KeyboardTray outline, with a floor slot for the bump on the back of the Rii.
 - **Power button:** positioned from the official S10e drawing. It sticks out 1 mm and has less play.
 - **Camera window:** centred on the S10e camera bar.

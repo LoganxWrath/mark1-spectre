@@ -22,7 +22,7 @@
 
 - **Phone:** Samsung Galaxy S10e (142.2 × 69.9 × 7.9 mm), no case.
 - **Keyboard:** Rii Mini X1 / X1 Plus, with a floor slot for the bump on its back.
-- **Closed size:** 164 × 89.2 × 26.8 mm. Opens to 115°, where a stop holds it.
+- **Closed size:** 164 × 89.2 × 26.8 mm. Opens to 130°, where a stop holds it.
 - **Lock:** sliding lock with a ribbed finger tab and 4 mm travel.
 - **Power button:** presses the phone's own key through the lid.
 - **Caps:** disguised side caps over the ports and microphone.
