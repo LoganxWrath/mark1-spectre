@@ -1,0 +1,28 @@
+name: "🛠️ Problema na impressão ou montagem"
+description: Algo não encaixa, parte ou não funciona.
+title: "[Problema] "
+labels: ["problema"]
+body:
+  - type: input
+    id: peca
+    attributes:
+      label: Que peça?
+      placeholder: "ex.: 02 tampa / 03 tranca"
+    validations:
+      required: true
+  - type: textarea
+    id: oque
+    attributes:
+      label: O que acontece?
+      description: Está apertado, folgado, partiu, não encaixa? Quanto (mm), se souberes.
+    validations:
+      required: true
+  - type: input
+    id: impressora
+    attributes:
+      label: Impressora, material e definições
+      placeholder: "ex.: Bambu A1, PETG, 0,2 mm, 4 paredes"
+  - type: textarea
+    id: fotos
+    attributes:
+      label: Fotos
